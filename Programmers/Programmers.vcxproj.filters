@@ -18,5 +18,11 @@
     <ClCompile Include="Hash_Lev1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="A_Hash_Lev1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue_Lev2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
