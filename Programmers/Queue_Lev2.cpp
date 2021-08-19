@@ -10,7 +10,7 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 	vector<int> answer;
 	queue<int> days_of_done; // 작업별 소요일.
 	
-	for (int i = 0; i < progresses.size(); i++) {
+	for (size_t i = 0; i < progresses.size(); i++) {
 		int res = 100 - progresses[i];
 		if (res % speeds[i] != 0) res += speeds[i];
 		days_of_done.push(res / speeds[i]);
@@ -26,8 +26,8 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 
 		if (x < days_of_done.front()) {
 			x = days_of_done.front();
+
 			days_of_done.pop();
-			
 			answer.push_back(1);
 			i++;
 		}
