@@ -14,7 +14,8 @@ std::queue<int> q;
 
 void dfs(int v) {
 	std::vector<int> copy[1001];
-	for (int i = 0; i < 1001; i++) {
+	int size = sizeof(vertex) / sizeof(vertex[0]); // size = 1001
+	for (int i = 0; i < size; i++) { 
 		copy[i].assign(vertex[i].begin(), vertex[i].end());
 	}
 	cout << v << " ";
