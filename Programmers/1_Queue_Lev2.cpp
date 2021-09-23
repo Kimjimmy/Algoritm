@@ -3,6 +3,7 @@
 #include <vector>
 #include<queue>
 
+// 고득점 kit [Queue] - 기능 개발
 using namespace std;
 
 vector<int> solution(vector<int> progresses, vector<int> speeds) {

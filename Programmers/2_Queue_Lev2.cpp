@@ -4,7 +4,7 @@
 #include <queue>
 #include<algorithm>
 
-
+// 고득점 kit [Stack] - 프린터
 using namespace std;
 
 int solution(vector<int> priorities, int location) {

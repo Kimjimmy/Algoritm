@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 
+// 고득점 kit [Stack] - 주식 가격
 using namespace std;
 
 vector<int> solution(vector<int> prices) {

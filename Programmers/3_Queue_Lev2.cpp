@@ -4,7 +4,8 @@
 #include<deque>
 #include<queue>
 
-using namespace std;
+// 고득점 kit [Queue]  다리를 지나가는 트럭
+using namespace std;  
 
 template<typename T>
 void clocking(T& t,int bridge_length) {
