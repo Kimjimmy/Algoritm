@@ -6,8 +6,8 @@
 
 using std::cin; using std::cout; using std::vector;
 
-int n;		
-vector<std::pair<int,int>> adjacent[501];
+int n;
+vector<std::pair<int, int>> adjacent[501];
 int indegree[501];
 int time[501], result[501];
 std::queue<int> que;
@@ -49,16 +49,16 @@ int main() {
 		cin >> time[i];
 		cin >> x;
 		while (x != -1) {
-			
-			adjacent[x].push_back(std::make_pair(time[i],i));
+
+			adjacent[x].push_back(std::make_pair(time[i], i));
 			indegree[i]++;
 			cin >> x;
-		}		
+		}
 	}
 
 	topologicalSort();
 
-	for (int i = 1; i <= n;i++) {
+	for (int i = 1; i <= n; i++) {
 		cout << result[i] << '\n';
 	}
 	return 0;

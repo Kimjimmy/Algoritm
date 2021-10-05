@@ -7,7 +7,7 @@ using namespace std;
 
 //char input[100000];  // string으로 받을수도있는데 char도 한번 써보고 싶었다.
 
-string input="";
+string input = "";
 list<char> str;
 
 
@@ -29,7 +29,7 @@ int main() {
 	}
 	//list<char> str(input.begin(), input.end());
 
-	
+
 	list<char>::iterator cursor = str.end();  // 처음에 커서 뒤에서 부터 시작.
 
 	for (unsigned int i = 0; i < m; i++) {
@@ -54,12 +54,12 @@ int main() {
 				break;
 			}
 			break;
-		case 'P': 
+		case 'P':
 			cin >> order;
 			str.insert(cursor, order);
 			break;
-		
-		
+
+
 		}
 	}
 

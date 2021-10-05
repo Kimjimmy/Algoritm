@@ -8,7 +8,7 @@ using std::cout;
 int n, m;
 int row, node;
 
-std::vector<std::vector<int>> adjacent{32001,};
+std::vector<std::vector<int>> adjacent{ 32001, };
 std::queue<int> answer;
 std::vector<int> indegree(32001);
 
@@ -25,8 +25,8 @@ void topologicalSort() {
 		int current = answer.front();
 		cout << current << " ";
 		answer.pop();
-		
-	
+
+
 		for (int elem : adjacent[current]) {
 			if (--indegree[elem] == 0) {
 				answer.push(elem);
@@ -34,7 +34,7 @@ void topologicalSort() {
 		}
 	}
 }
-	
+
 
 
 int main() {

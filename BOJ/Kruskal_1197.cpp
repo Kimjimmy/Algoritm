@@ -6,7 +6,7 @@ using std::cin;
 using std::cout;
 using std::vector;
 
-int v,e;  // 정점의 개수
+int v, e;  // 정점의 개수
 int a, b;
 long long c; // 가중치 
 
@@ -17,7 +17,7 @@ class Edge {
 public:
 	int node[2];
 	int distance;
-	Edge(int a, int b,int _distance) :distance(_distance) {
+	Edge(int a, int b, int _distance) :distance(_distance) {
 		node[0] = a;
 		node[1] = b;
 	}
@@ -55,7 +55,7 @@ void Kruskal(vector<Edge>& edge) {
 	long long sum = 0;
 	int cnt = 0;  // 엣지 추가된 개수 새기.
 
-	for (int i = 0; i < e && cnt!=v-1; i++) {
+	for (int i = 0; i < e && cnt != v - 1; i++) {
 		int x = edge[i].node[0];
 		int y = edge[i].node[1];
 		if (findSet(x) != findSet(y)) {

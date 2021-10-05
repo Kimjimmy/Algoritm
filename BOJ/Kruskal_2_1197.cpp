@@ -8,7 +8,7 @@ int v, e;
 int a, b;
 long long c;
 
-vector< pair<int,pair<int, int>>> edges;
+vector< pair<int, pair<int, int>>> edges;
 
 int parent[10001];
 int tree_size[10001];
@@ -39,13 +39,13 @@ void kruskal() {
 		parent[i] = i;
 	}
 	fill_n(tree_size, v, 1);
-	int answer= 0;
+	int answer = 0;
 	int cnt = 0;
 	for (int i = 0; i < e && cnt != v - 1; i++) {
 		int y = edges[i].second.first;
 		int x = edges[i].first;
 
-		if(findSet(x)!= findSet(y)){
+		if (findSet(x) != findSet(y)) {
 			answer += edges[i].second.second;
 			Union(x, y);
 			cnt++;
@@ -65,10 +65,10 @@ int main() {
 	edges.reserve(v);
 	for (int i = 0; i < e; i++) {
 		cin >> a >> b >> c;
-		edges.push_back(make_pair(a,make_pair(b, c)));
+		edges.push_back(make_pair(a, make_pair(b, c)));
 		//edges.push_back(make_pair(c,make_pair(b, a)));
 	}
-	sort(edges.begin(), edges.end(),compare<pair<int,pair<int,int>>>);
+	sort(edges.begin(), edges.end(), compare<pair<int, pair<int, int>>>);
 	kruskal();
 
 

@@ -15,7 +15,7 @@ using namespace std;
 void josephus(int n, int k);
 
 int main() {
-	
+
 	int k, n;
 	cin >> n;
 	cin >> k;
@@ -50,7 +50,7 @@ void josephus(int n, int k) {
 
 	// arr를 이용해서 range based for문 사용하려고 했는데 동적할당한 arr는 range based for loop을 사용할수 없다. ===> vector를 애용하자!!
 	cout << "<";
-	for (int i = 0; i < n-1; i++) {
+	for (int i = 0; i < n - 1; i++) {
 		cout << arr[i] << ", ";
 	}
 	cout << arr[n - 1] << ">";
