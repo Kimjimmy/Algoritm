@@ -35,10 +35,8 @@ int Bfs(T& arr) {
 					
 				}
 			}
-		}
-		
-	}
-	
+		}		
+	}	
 	return 0;
 }
 

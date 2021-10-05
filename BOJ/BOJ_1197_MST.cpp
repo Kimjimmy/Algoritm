@@ -78,11 +78,7 @@ int main() {
 	cin >> v >> e;
 	edge.reserve(v);
 
-	/*for (int i = 0; i < e; i++) {
-		cin >> a >> b >> c;
-		nodes[a].push_back(std::make_pair(b, c));
-		nodes[b].push_back(std::make_pair(a, c));
-	}*/
+
 
 	for (int i = 0; i < e; i++) {
 		cin >> a >> b >> c;
