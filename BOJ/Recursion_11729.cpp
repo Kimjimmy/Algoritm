@@ -1,6 +1,4 @@
 #include<iostream>
-#include<vector>
-#include<stack>
 #include<cmath>
 
 using namespace std;
@@ -25,7 +23,5 @@ int main() {
 	std::cin >> n;
 	cout << (1 << n) - 1 << '\n';
 	move(n, 1, 3);
-
-
 	return 0;
 }
